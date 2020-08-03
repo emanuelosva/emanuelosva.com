@@ -1,6 +1,7 @@
 <script>
   import Button from "../components/Button.svelte";
   import Title from "../components/Title.svelte";
+  import BackFigure from "../components/BackFigure.svelte";
 </script>
 
 <style>
@@ -26,7 +27,18 @@
   }
 
   .Home-wrapper.info {
-    padding-right: 2em;
+    padding-right: 2.5em;
+  }
+
+  .Home-wrapper h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  .Home-wrapper h1 strong {
+    color: #ff4301;
   }
 
   .Home-wrapper h2 {
@@ -48,6 +60,8 @@
   <title>Emaneul Osorio</title>
 </svelte:head>
 
+<BackFigure />
+
 <div class="Home">
   <div class="Home-container">
     <div class="Home-wrapper">
@@ -57,7 +71,10 @@
     </div>
     <div class="Home-wrapper info">
       <h2>Hi There!</h2>
-      <Title text="I'm" highText="Emanuel Osorio" />
+      <h1>
+        I'm
+        <strong>Emanuel Osorio</strong>
+      </h1>
       <p>
         I'm a mexican full stack web developer. Focused in backend development
         with Node.js and python. I'm passionate about building excellent
