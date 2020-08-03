@@ -8,7 +8,7 @@
       height: 200%;
       width: 100%;
       display: block;
-      background-color: #eb7423;
+      background-color: #fa7d09;
       transform: rotate(-15deg);
     }
   }

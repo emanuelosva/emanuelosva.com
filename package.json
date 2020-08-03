@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build",
-    "export": "sapper export",
-    "start": "node __sapper__/build",
+    "export": "NODE_ENV=production sapper export",
+    "start": "NODE_ENV=production node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",

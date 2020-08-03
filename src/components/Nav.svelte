@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #2b2a2a;
+    background-color: #4a3f35;
     border-radius: 25px;
   }
 
