@@ -7,12 +7,14 @@
 <style>
   .Home {
     box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 10px 0;
   }
 
   .Home-container {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
   }
 
