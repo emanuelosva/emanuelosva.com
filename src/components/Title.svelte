@@ -7,7 +7,8 @@
   .Title h1 {
     font-family: "Poppins";
     font-weight: 700;
-    font-size: 45px;
+    font-size: 60px;
+    text-transform: uppercase;
   }
 
   .Title h1 strong {
