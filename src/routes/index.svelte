@@ -1,6 +1,6 @@
 <script>
-  import Button from "../components/Buttom.svelte";
-  import Buttom from "../components/Buttom.svelte";
+  import Button from "../components/Button.svelte";
+  import Title from "../components/Title.svelte";
 </script>
 
 <style>
@@ -27,16 +27,6 @@
 
   .Home-wrapper.info {
     padding-right: 2em;
-  }
-
-  .Home-wrapper h1 {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 45px;
-  }
-
-  .Home-wrapper h1 strong {
-    color: #ff4301;
   }
 
   .Home-wrapper h2 {
@@ -67,19 +57,16 @@
     </div>
     <div class="Home-wrapper info">
       <h2>Hi There!</h2>
-      <h1>
-        I'm
-        <strong>Emanuel Osorio</strong>
-      </h1>
+      <Title text="I'm" highText="Emanuel Osorio" />
       <p>
         I'm a mexican full stack web developer. Focused in backend development
         with Node.js and python. I'm passionate about building excellent
         products that improves the life of people and make a contribution to the
         world through the web.
       </p>
-      <Buttom url="/about" text="more about me">
+      <Button url="/about" text="more about me">
         <i class="fa fa-user" />
-      </Buttom>
+      </Button>
     </div>
   </div>
 </div>
