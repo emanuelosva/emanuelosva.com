@@ -5,21 +5,43 @@
 </script>
 
 <style>
-  .Contact {
-    padding: 6em;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+  @media only screen and (min-width: 1024px) {
+    .Contact {
+      padding: 6em;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .Contact-wrapper.info {
+      width: 30%;
+    }
+
+    .Contact-wrapper.form {
+      width: 70%;
+    }
+
+    .Contact-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-flow: row;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .Contact {
+      padding: 3em;
+    }
+  }
+
+  .title {
+    text-align: center;
   }
 
   .Contact-container {
     width: 100%;
-    margin: 3em 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row;
+    margin: 4em 0;
   }
 
   .Contact-wrapper h2 {
@@ -70,11 +92,16 @@
 </svelte:head>
 
 <div class="Contact">
-  <Title text="Get in" highText="Touch" />
+  <span class="title">
+    <Title text="Get in" highText="Touch" />
+  </span>
   <div class="Contact-container">
-    <div class="Contact-wrapper">
+    <div class="Contact-wrapper info">
       <h2>Contact me!</h2>
-      <p>Some fancy text here...</p>
+      <p>
+        Get in touch with me if you want to collab. I am always open to
+        discussing new ideas and proyects.
+      </p>
       <div class="Contact-wrapper__info">
         <i class="fa fa-envelope" />
         <div class="Contact-wrapper__info-data">
@@ -104,7 +131,7 @@
         </CircleAnchor>
       </div>
     </div>
-    <div class="Contact-wrapper">
+    <div class="Contact-wrapper form">
       <EmailForm />
     </div>
   </div>
