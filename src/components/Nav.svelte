@@ -3,47 +3,51 @@
 </script>
 
 <style>
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     .Nav {
-      position: absolute;
-      left: calc(100vw - 120px);
-      top: 30%;
-      z-index: 1000;
+      display: none;
     }
+  }
 
-    .Nav ul {
-      list-style: none;
-    }
+  .Nav {
+    position: absolute;
+    left: calc(100vw - 120px);
+    top: 30%;
+    z-index: 1000;
+  }
 
-    .Nav ul li {
-      box-sizing: border-box;
-      background-color: #4a3f35;
-      border-radius: 25px;
-    }
+  .Nav ul {
+    list-style: none;
+  }
 
-    .Nav ul li a {
-      box-sizing: border-box;
-      width: 50px;
-      height: 50px;
-      margin: 0 0 0.8em 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 25px;
-      text-decoration: none;
-    }
+  .Nav ul li {
+    box-sizing: border-box;
+    background-color: #4a3f35;
+    border-radius: 25px;
+  }
 
-    .Nav ul li a i {
-      position: relative;
-      right: 0px;
-      z-index: 2000;
-      font-size: 1.2em;
-      color: #ffffff;
-    }
+  .Nav ul li a {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0.8em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    text-decoration: none;
+  }
 
-    [aria-current] a {
-      background-color: #fa7d09;
-    }
+  .Nav ul li a i {
+    position: relative;
+    right: 0px;
+    z-index: 2000;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+
+  [aria-current] a {
+    background-color: #fa7d09;
   }
 </style>
 

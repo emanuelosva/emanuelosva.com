@@ -4,10 +4,21 @@
 </script>
 
 <style>
+  @media only screen and (min-width: 769px) {
+    .Title h1 {
+      font-size: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Title h1 {
+      font-size: 40px;
+    }
+  }
+
   .Title h1 {
     font-family: "Poppins";
     font-weight: 700;
-    font-size: 60px;
     text-transform: uppercase;
   }
 

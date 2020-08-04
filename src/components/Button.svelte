@@ -9,7 +9,9 @@
   const hoverFalse = () => (hovering = false);
 
   const navigate = async () => {
-    await goto(url);
+    if (url) {
+      await goto(url);
+    }
   };
 </script>
 
@@ -23,7 +25,10 @@
     justify-content: center;
     border-radius: 21px;
     background-color: #fa7d09;
+    color: #ffffff;
     cursor: pointer;
+    border: none;
+    outline: none;
   }
 
   .Button-text {
@@ -45,13 +50,14 @@
   }
 </style>
 
-<div
+<button
   class="Button"
   on:click={navigate}
   on:mouseover={hoverTrue}
-  on:mouseout={hoverFalse}>
+  on:mouseout={hoverFalse}
+  type="submit">
   <p class="Button-text">{text}</p>
   <div class="Button-icon" class:active={hovering}>
     <slot />
   </div>
-</div>
+</button>
